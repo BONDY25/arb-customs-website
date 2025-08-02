@@ -1,0 +1,359 @@
+/* Import the Lexend font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap');
+
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+}
+
+/* Banner/Header Styles */
+header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    height: 250px; /* Added px unit */
+    top: 0;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+/* Brand and Logo Wrapper */
+.brand-logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Styling */
+header img {
+    width: 200px; /* Adjust the size of the logo */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Brand Name Styling */
+header h1 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: black;
+    display: flex;
+    gap: 20px; /* Creates space between the links */
+}
+
+/* Links Styling */
+nav a {
+    
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content Styles */
+.main-content {
+    padding-top: 250px; /* Adjust this value to match the height of your fixed header */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+
+.header-icon {
+    width: 55px; /* Adjust the size of the icon */
+    height: 55px; /* Keep the height the same for circular shape */
+    border-radius: 50%; /* This makes the image circular */
+    object-fit: cover; /* Ensures the image covers the circle */
+    margin-right: 10px; /* Space between the image and text */
+    vertical-align: middle; /* Aligns the icon with the text */
+}
+
+/* Mobile Responsiveness */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto; /* Push it to the right */
+}
+
+/* Hamburger Icon */
+.hamburger {
+    width: 30px;
+    height: 3px;
+    background: white;
+    
+    display: block;
+    position: relative;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background: white;
+    
+    display: block;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.hamburger:before {
+    top: -8px;
+}
+
+.hamburger:after {
+    top: 8px;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: black;
+    display: flex;
+    gap: 20px; /* Creates space between the links */
+}
+
+/* Handle navbar when screen is smaller than 768px -----------------------------------*/
+@media (max-width: 768px) {
+    nav {
+        display: none; /* Hide the nav by default */
+        position: absolute; /* Positioning for the menu */
+        top: 0;
+        right: 0;
+        background-color: black; /* Same as header background */
+        width: 100%; /* Full width */
+        padding: 20px; /* Padding inside the menu */
+        box-sizing: border-box; /* Include padding in width calculations */
+    }
+
+    nav.active {
+        background-color: black;
+        display: flex; /* Show the nav when active */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .close-menu {
+        display: none; /* Hidden by default */
+        background: black; /* No background */
+        border: none; /* No border */
+        color: white; /* White text */
+        font-size: 30px; /* Larger font */
+        cursor: pointer; /* Pointer cursor */
+        position: absolute; /* Position the button */
+        top: 20px; /* Space from the top */
+        right: 20px; /* Space from the right */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the menu toggle button */
+    }
+
+    /* Show close menu button on active nav */
+    nav.active .close-menu {
+        display: block; /* Show close button when nav is active */
+    }
+}
+
+/* Handle navbar when screen is larger than 768px ------------------------------------*/
+@media (min-width: 768px) {
+    .close-menu {
+        display: none; /* Ensure the close button is hidden on larger screens */
+    }
+}
+
+
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    max-width: 100%; /* 100% of the parent container width */
+    margin: auto;
+    overflow: hidden;
+}
+
+.product-slideshow-container {
+    position: relative;
+    text-align: center;
+    max-width: 800px; /* 100% of the parent container width */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Hide all images by default */
+.mySlides {
+    display: none;
+}
+
+/* Make images responsive */
+.mySlides img {
+    width: 100%; /* Full width */
+    height: auto; /* Auto height to maintain aspect ratio */
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" on the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0; /* Align left */
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a background color to the buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* Dots below the slideshow for navigation */
+.dot-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Products Page --------------------------------------------------------------------*/
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Create responsive columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Add a slight zoom effect on hover */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #333;
+}
+.availability {
+    color: red; /* Example: Change the text color to red */
+    font-weight: bold; /* Make it bold */
+    font-size: 20px; /* Increase the font size */
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some space at the top */
+}
+
+/* Footer ---------------------------------------------------------------------------------------------------------------------------------------*/
+footer {
+    background-color: black; /* Set the footer background color to black */
+    color: white; /* Set the text color to white */
+    padding: 20px 0; /* Add padding to the top and bottom */
+    text-align: center; /* Center align text */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space between items */
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+}
+
+.footer-links ul {
+    list-style: none; /* Remove bullets from the list */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-right:20px;
+    margin-left: 20px;
+    margin-top: 20px; /* Add space above copyright text */
+}
+
+.social-media a {
+    margin-right: 20px; /* Spacing between icons */
+    color: white; /* Icon color */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.social-media a:hover {
+    color: #f0a500; /* Change color on hover */
+}

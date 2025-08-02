@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Have Your Say - ARB Customs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+    <!-------------------------------------------------------------------------------------------------------------------------->    
+    <!-- Header/Banner --------------------------------------------------------------------------------------------------------->    
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    
+    <header>
+        <div class="brand-logo">  
+            <a href="home.html">
+                <img src="assets/images/arb-customs-logo-(white).png" alt="ARB Customs Logo"> 
+            </a>
+            <h1>ARB Customs</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav>
+            <button class="close-menu" aria-label="Close menu">&times;</button> <!-- Close button -->
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="Resources.html">Resources</a> <!-- Navigation link to Resources -->
+        </nav>
+    </header>
+
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <!-- Main Content ---------------------------------------------------------------------------------------------------------->    
+    <!-------------------------------------------------------------------------------------------------------------------------->
+
+    <div class="main-content">
+        <h2>Have Your Say</h2>
+        <form action="/submit-vote" method="POST" id="have-your-say-form">
+            <label for="product-options">Which product would you like to see next?</label>
+            <br></br>
+            <select id="product-options" name="product">
+                <option value="les-paul-kit">Les Paul Wiring Kit</option>
+                <option value="telecaster-kit">Telecaster Wiring Kit</option>
+                <option value="stratocaster-kit">Stratocaster Wiring Kit</option>
+                <option value="other">Other</option>
+            </select>
+            <br></br>
+            <label for="user-name">Your Name:</label>
+            <input type="text" id="user-name" name="user_name" required>
+
+            <!-- Google reCAPTCHA widget -->
+            <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+            <br></br>
+            <button type="submit">Submit Your Vote</button>
+        </form>
+    </div>
+
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <!-- Footer Section -------------------------------------------------------------------------------------------------------->    
+    <!-------------------------------------------------------------------------------------------------------------------------->
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Address: </p>
+                <p>Phone: </p>
+                <a href="mailto:aidenbondmusic@gmail.com">aidenbondmusic@gmail.com</a>
+            </div>
+    
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>                    
+                    <li><a href="products.html">Products</a></li>                    
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms and Conditions</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>               
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ARB Customs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <!-- JS Scripts -------------------------------------------------------------------------------------------------------->    
+    <!-------------------------------------------------------------------------------------------------------------------------->
+
+    <script src="assets/scripts/menuToggle.js"></script>
+    <script src="assets/scripts/availability.js"></script>
+    <script src="assets/scripts/have-yoursay.js"></script>
+</body>
+</html>

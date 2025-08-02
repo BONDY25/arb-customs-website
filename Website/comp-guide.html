@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Guide - ARB Customs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-------------------------------------------------------------------------------------------------------------------------->    
+    <!-- Header/Banner --------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------->
+
+    <header>
+        <div class="brand-logo">  
+            <a href="home.html">
+                <img src="assets/images/arb-customs-logo-(white).png" alt="ARB Customs Logo"> 
+            </a>
+            <h1>ARB Customs</h1>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav>
+            <button class="close-menu" aria-label="Close menu">&times;</button> <!-- Close button -->
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="Resources.html">Resources</a> <!-- Navigation link to Resources -->
+        </nav>
+    </header>
+
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <!-- Main Content ---------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------->
+   
+    <div class="comp-main-content">
+        <br></br>
+        <a href="Resources.html">Back to Resources</a> <!-- Navigation link to Resources -->
+
+        <h2>Components</h2>
+    
+        <!-- Intro -->
+        <h3>What Are They</h3>
+        <p>We've covered pickups in our pickup guide, but now let's explore the other components that, while not as essential, are equally important in a guitar's electronics. A very simple guitar setup might involve a direct connection from the pickups to the output. However, what if we want to control the pickup's volume, adjust how many high frequencies pass through, or use a switch to select which pickup's signal goes to the output? First, we'll talk about the individual components, and then we'll discuss how they work together to create versatile circuits that shape the signals captured by the pickups.</p>
+        <div class="comp-cover-photo">
+            <img src="assets/images/image-coming-soon.png" alt="comp-cover-photo">
+        </div>
+   
+        <br></br>
+
+        <!-- Pots -->
+        <h3>Potentiometers</h3>
+        <p>These are variable resistors that allow you to change the resistance between each of their contacts. A resistor is an electrical component with a fixed resistance against electrical current. Think of it like this: if a wire is a 4-lane highway, resistors are like lane closures, forcing all the traffic into a narrower path and ultimately slowing or weakening the flow. A potentiometer has three contacts and a twistable shaft. The shaft is connected to a wiper that moves along a resistive material. Each end of the material is connected to a contact, while the middle contact is connected to the wiper. As you turn the shaft, the resistance between the wiper and each contact changes.</p>
+        <p>In the context of a guitar, potentiometers are often used as volume knobs. The guitar's signal goes to one end of the resistive material, while the wiper is connected to the guitar's output. As you turn the volume knob, the resistance between the input signal and the wiper changes, which in turn alters the output volume of the guitar. This is just one example of how potentiometers are used, but they have a variety of applications in guitar electronics. Resistance is measured in ohms, and the higher the value, the greater the resistance. Potentiometers are typically listed with the resistance value from one end of the resistive material to the other.</p>
+        <div class="comp-pots-photo">
+            <img src="assets/images/image-coming-soon.png" alt="comp-cover-photo">
+        </div>
+        <br></br>
+
+        <!-- Capacitors -->
+        <h3>Capacitors</h3>
+        <p>Capacitors are like buckets, but instead of storing water, they store electrical charge. When the "bucket" gets too full, the charge (or current) begins to overflow. This overflow helps to smooth the current, as the rate at which the charge spills over is usually more constant than the current filling the capacitor. Capacitors work by placing an insulating material (called a dielectric) between two conductive plates. As electrical charge builds on one side, it eventually creates enough of a difference to influence the current on the opposite side, allowing a continuous flow of current.</p>
+        <p>Capacitors have the characteristic of favouring higher frequencies, meaning they allow those frequencies to pass through more easily. When paired with a potentiometer, capacitors can be used to adjust how much high or low frequencies pass through to the guitar's output or allow high frequencies to "bleed" through as the volume is turned down. Capacitance, or the ability to store charge, is measured in farads. The higher the capacitance, the more charge is required before the current can pass through the capacitor.</p>
+        <div class="comp-cap-photo">
+            <img src="assets/images/image-coming-soon.png" alt="comp-cover-photo">
+        </div>
+        <br></br>
+
+        <!-- Output Jacks -->
+        <h3>Output Jacks</h3>
+        <p>Output jacks are fairly simple components, and there are two main types: mono and stereo. In most guitars, we use mono jacks. A mono output jack has two contacts: ground (negative) and hot/live (positive). The signal coming from the guitar's pickups is wired to the positive terminal, while all the ground connections from the guitar's components should lead to the negative terminal.</p>
+        <p>A stereo jack, on the other hand, has three contacts: positive, negative, and an additional one called the ring. In guitars with active pickups, the stereo jack is wired similarly to a mono jack, except the ring contact is connected to the negative terminal of the battery. This configuration breaks the circuit when the guitar isn't plugged in, preventing the battery from draining while the guitar is not in use.</p>
+        <p>In rare cases, stereo jacks can be used for more complex setups, where the ring contact serves as a second output. This allows each pickup to be sent to separate amps or outputs when used with a stereo cable, opening up a wide range of possibilities for unique signal routing. However, this adds complexity to both the guitar's electronics and the amplification setup.</p>
+        <div class="comp-oj-photo">
+            <img src="assets/images/image-coming-soon.png" alt="comp-cover-photo">
+        </div>
+        <br></br>
+
+        <!-- Switches -->
+        <h3>Switches</h3>
+        <p>In guitars, switches are most commonly used to select which pickup is connected to the guitar's output by physically making or breaking the connection. Pickup selectors are usually 3-way or 5-way switches, depending on how many pickups the guitar has.</p>
+        <p>Switches can also be used for more creative setups, such as engaging or disengaging coil-splitting/tapping on humbuckers, switching between different capacitor values for tonal changes, or activating other custom modifications. Essentially, they allow you to control various circuit elements and can be adapted to suit a wide range of configurations and tonal options.</p>
+        <div class="comp-switch-photo">
+            <img src="assets/images/image-coming-soon.png" alt="comp-cover-photo">
+        </div>
+        <br></br>
+
+        <!-- Bridge -->
+        <h3>Bridge</h3>
+        <p>The bridge is mounted to the guitar's body and serves as one of the points that create tension in the strings. It typically secures one end of the strings to the guitar and houses adjustable saddles where the strings rest. These saddles can be moved to change the length of each string between the nut and the bridge, allowing for proper intonation. Intonation ensures that the notes played across all frets are in tune.</p>
+        <p>If a guitar is not properly intonated, the strings may be in tune when played open, but the notes will become progressively out of tune as you move up the fretboard. This happens because the scale length (the vibrating length of the string) is affected by factors such as string gauge, tension, and tuning. Adjusting the saddles allows you to compensate for these differences and keep the guitar in tune across all frets.</p>
+        <div class="comp-bridge-photo">
+            <img src="assets/images/image-coming-soon.png" alt="comp-cover-photo">
+        </div>
+        <br></br>
+
+        <!-- Nut -->
+        <h3>Nut</h3>
+        <p>The nut is the second point of contact that creates tension in the strings, with its primary function being to anchor the strings as they transition from the fretboard to the tuners. Located at the end of the neck, just before the headstock, the nut has a slot for each string, guiding them toward the tuners. Traditionally made from animal bone, nuts are now commonly crafted from synthetic bone, graphite, or other modern materials.</p>
+        <p>The nut plays a crucial role in maintaining tuning stability, which refers to how well a string stays in tune after being tuned and played. A high-quality nut allows the string to move freely across it without snagging or binding. If the string gets caught in the nut, it can cause tuning issues, so ensuring smooth movement is key for stability.</p>
+        <div class="comp-nut-photo">
+            <img src="assets/images/image-coming-soon.png" alt="comp-cover-photo">
+        </div>
+        <br></br>
+
+        <!-- Tuners -->
+        <h3>Tuners</h3>
+        <p>Tuners allow you to adjust the pitch of each guitar string by increasing or decreasing its tension. They come in various styles, including vintage-style tuners where the string is loaded through the top, through-post tuners, and locking tuners. While the designs may vary, they all serve the same purpose of fine-tuning the string's tension to achieve the desired pitch.</p>
+        <p>Good-quality tuners contribute significantly to tuning stability. Locking tuners, in particular, are known for improving stability as they secure the string more firmly, reducing the chances of slipping and minimising the need for frequent retuning. Having reliable tuners ensures your guitar stays in tune during play.</p>
+        <div class="comp-tuners-photo">
+            <img src="assets/images/image-coming-soon.png" alt="comp-cover-photo">
+        </div><br></br>
+
+        <!-- Frets -->
+        <h3>Frets</h3>
+        <p>Frets are the metal strips embedded along the guitar's fretboard. They divide the neck into fixed intervals, which correspond to specific musical notes. When you press a string down behind a fret, it shortens the string's vibrating length, raising the pitch to a specific note. The exact position of the frets is carefully calculated to ensure that the notes are evenly spaced across the neck according to a musical scale.</p>
+        <p>Frets come in different sizes, commonly referred to as "jumbo" or "medium jumbo," and the choice of fret size can influence playability. Larger frets make it easier to bend notes and can give a smoother feel when playing, while smaller frets offer more control for precise finger placement.</p>
+        <p>The material and condition of the frets also affect the guitar's tone and overall feel. Frets made from harder materials like stainless steel tend to last longer and produce a slightly brighter tone. Over time, frets can wear down, leading to issues with intonation and buzzing, so they may need to be re-leveled or replaced periodically to maintain optimal playability.</p>
+        <div class="comp-frets-photo">
+            <img src="assets/images/image-coming-soon.png" alt="comp-cover-photo">
+        </div>
+        <br></br>
+
+    </div>    
+
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <!-- Footer Section -------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------->
+   
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Address: </p>
+                <p>Phone: </p>
+                <a href="mailto:aidenbondmusic@gmail.com">aidenbondmusic@gmail.com</a>
+            </div>
+    
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>                    
+                    <li><a href="products.html">Products</a></li>                    
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms and Conditions</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                </ul>
+            </div>
+    
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>               
+                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ARB Customs. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-------------------------------------------------------------------------------------------------------------------------->
+    <!-- JS Scripts -------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------------->
+   
+    <script src="assets/scripts/menuToggle.js"></script>
+</body>
+</html>

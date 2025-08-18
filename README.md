@@ -1,1 +1,1 @@
-This is the repo for the website I built which was supposed to be for my little guitar tech side business thingy where I'd make custom wiring looms for guitars and sell them
+This is the repo for the website I built which was supposed to be for my little guitar tech side business thingy where I'd make custom wiring looms for guitars and sell them... One day I'll actually have time to launch this side hustle and finish the site.
